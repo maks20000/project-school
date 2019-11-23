@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
+  line-height: 1.65;
   font-weight: 300;
 }
 
@@ -65,13 +66,14 @@ header nav ul li {
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: center;
+  height: 100%;
 }
 
 header nav ul li a {
   font-size: 14px;
   display: block;
   color: #ffffff;
-  padding: 1.5rem 0;
+  padding: 1.1rem 0;
   text-decoration: none !important;
 }
 
