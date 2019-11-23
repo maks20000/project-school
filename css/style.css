@@ -224,4 +224,8 @@ header .header-main .titles .title-item-big {
 .events .content .events-title a {
   font-size: 15px;
 }
+
+.events .content .events-list .item img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
