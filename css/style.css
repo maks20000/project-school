@@ -214,7 +214,7 @@ header .header-main .titles .title-item-big {
 }
 
 .events .content {
-  padding: 35px 0px;
+  padding: 35px 0px 15px;
 }
 
 .events .content .events-title {
@@ -340,10 +340,60 @@ header .header-main .titles .title-item-big {
 .content p {
   margin-bottom: 10px;
   line-height: 21px;
-  font-size: 14px;
+  font-size: 13px;
+  padding-bottom: 13px;
 }
 
 .content .photo img {
+  width: 100%;
+}
+
+footer .footer-menu {
+  background-color: #DDDDDD;
+}
+
+footer .footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-menu ul li {
+  text-align: center;
+  margin-left: 27px;
+  height: 100%;
+}
+
+footer .footer-menu ul li a {
+  padding: 1.1rem 1.1rem;
+  display: block;
+  color: #000;
+}
+
+footer .footer-menu ul li a:hover {
+  background-color: #038CDB;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .footer-menu ul li:first-child {
+  margin: 0;
+}
+
+footer .footer-contacts {
+  font-size: 13px;
+  line-height: 15px;
+  padding-top: 20px;
+}
+
+footer .footer-contacts p {
+  margin-bottom: 20px;
+}
+
+footer .map img {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
