@@ -18,6 +18,35 @@ h2 {
   font-size: 20px;
 }
 
+.menu {
+  background-color: #28AFE9;
+  width: 20%;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu ul li {
+  border-top: 1px solid #63C1EE;
+}
+
+.menu ul li a {
+  font-size: 14px;
+  display: block;
+  color: #ffffff;
+  padding: 1.1rem 1.5rem;
+  width: 100%;
+  text-decoration: none;
+  border-top: 1px solid transparent;
+}
+
+.menu ul li a:hover {
+  background-color: #0193DE;
+  border-top: 1px solid #fff;
+  color: #000 !important;
+}
+
 .container .up-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +96,7 @@ header nav ul li {
           flex-grow: 1;
   text-align: center;
   height: 100%;
+  position: relative;
 }
 
 header nav ul li a {
@@ -88,6 +118,27 @@ header nav ul .icon1 {
   height: 40px;
   background: url("../icon/nav-icon1.png") no-repeat center center;
   background-size: contain;
+}
+
+header nav ul .dropdown {
+  position: absolute;
+  display: inherit;
+  top: 100%;
+  width: 100%;
+}
+
+header nav ul .dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav ul .dropdown ul li {
+  width: 100%;
 }
 
 header nav .search {
@@ -133,35 +184,6 @@ header .header-main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-header .header-main .menu {
-  background-color: #28AFE9;
-  width: 20%;
-}
-
-header .header-main .menu ul {
-  padding: 0;
-}
-
-header .header-main .menu ul li {
-  border-top: 1px solid #63C1EE;
-}
-
-header .header-main .menu ul li a {
-  font-size: 14px;
-  display: block;
-  color: #ffffff;
-  padding: 1.1rem 1.5rem;
-  width: 100%;
-  text-decoration: none;
-  border-top: 1px solid transparent;
-}
-
-header .header-main .menu ul li a:hover {
-  background-color: #0193DE;
-  border-top: 1px solid #fff;
-  color: #000 !important;
 }
 
 header .header-main .titles {
@@ -227,7 +249,7 @@ header .header-main .titles .title-item-big {
 }
 
 .events .content .events-title a {
-  font-size: 15px;
+  font-size: 13px;
   position: relative;
   margin-right: 20px;
 }
@@ -335,6 +357,10 @@ header .header-main .titles .title-item-big {
   background-size: contain;
   top: 7px;
   right: -20px;
+}
+
+.content .row {
+  padding-bottom: 20px;
 }
 
 .content p {

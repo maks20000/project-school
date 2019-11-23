@@ -15,6 +15,26 @@ p
 h2 
     font-size: 20px
 
+.menu
+    background-color: $bg-header
+    width: 20%
+    ul
+        padding: 0
+        li 
+            border-top: 1px solid #63C1EE
+            a
+                font-size: 14px
+                display: block
+                color: #ffffff
+                padding: 1.1rem 1.5rem
+                width: 100%
+                text-decoration: none
+                border-top: 1px solid transparent
+            a:hover 
+                background-color: #0193DE
+                border-top: 1px solid #fff
+                color: #000 !important
+
 .container 
     .up-line
         display: flex
@@ -43,6 +63,7 @@ header
                 flex-grow: 1
                 text-align: center
                 height: 100%
+                position: relative
                 a
                     font-size: 14px
                     display: block
@@ -59,6 +80,16 @@ header
                 height: 40px
                 background: url('../icon/nav-icon1.png') no-repeat center center
                 background-size: contain
+            .dropdown
+                position: absolute
+                display: inherit
+                top: 100%
+                width: 100%
+                ul 
+                    display: flex
+                    flex-direction: column
+                    li 
+                        width: 100%
         .search
             display: flex
             align-items: center
@@ -84,25 +115,6 @@ header
     .header-main 
         display: flex
         justify-content: flex-end
-        .menu
-            background-color: $bg-header
-            width: 20%
-            ul
-                padding: 0
-                li 
-                    border-top: 1px solid #63C1EE
-                    a
-                        font-size: 14px
-                        display: block
-                        color: #ffffff
-                        padding: 1.1rem 1.5rem
-                        width: 100%
-                        text-decoration: none
-                        border-top: 1px solid transparent
-                    a:hover 
-                        background-color: #0193DE
-                        border-top: 1px solid #fff
-                        color: #000 !important
         .titles 
             flex-grow: 1
             background: url('../img/bg-head.jpg') no-repeat top center
@@ -138,7 +150,7 @@ header
             display: flex
             justify-content: space-between
             a
-                font-size: 15px
+                font-size: 13px
                 position: relative
                 margin-right: 20px
                 &:before
@@ -207,6 +219,8 @@ header
                                 top: 7px
                                 right: -20px
 .content 
+    .row
+        padding-bottom: 20px
     p 
         margin-bottom: 10px
         line-height: 21px
