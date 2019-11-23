@@ -208,6 +208,11 @@ header .header-main .titles .title-item-big {
   line-height: 26px;
 }
 
+.events a {
+  color: #69C2EF;
+  font-size: 15px;
+}
+
 .events .content {
   padding: 35px 0px;
 }
@@ -224,16 +229,18 @@ header .header-main .titles .title-item-big {
 .events .content .events-title a {
   font-size: 15px;
   position: relative;
+  margin-right: 20px;
 }
 
 .events .content .events-title a:before {
   content: '';
   width: 15px;
-  height: 15px;
+  height: 10px;
   position: absolute;
   background: url("../icons/arrow.png") no-repeat center center;
   background-size: contain;
-  right: 0;
+  top: 7px;
+  right: -20px;
 }
 
 .events .content .events-list {
@@ -265,7 +272,7 @@ header .header-main .titles .title-item-big {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   padding: 15px;
 }
@@ -297,7 +304,7 @@ header .header-main .titles .title-item-big {
 
 .events .content .events-list .item .text .link {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   color: #69C2EF;
 }
 /*# sourceMappingURL=style.css.map */
