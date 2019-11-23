@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 300;
 }
 
@@ -11,6 +11,10 @@ ul {
 
 p {
   margin: 0;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 .container .up-line {
@@ -144,7 +148,7 @@ header .header-main .menu ul li {
 header .header-main .menu ul li a {
   display: block;
   color: #ffffff;
-  padding: 1.5rem 1.5rem;
+  padding: 1.1rem 1.5rem;
   width: 100%;
   text-decoration: none;
   border-top: 1px solid transparent;
@@ -193,5 +197,22 @@ header .header-main .titles .title-item-big {
   font-size: 19px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.events .content {
+  padding: 35px 20px;
+}
+
+.events .content .events-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.events .content .events-title a {
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
