@@ -84,11 +84,9 @@ header
     .header-main 
         display: flex
         justify-content: flex-end
-        background: url('../img/bg-head.jpg') no-repeat top center
-        background-size: cover
-
         .menu
             background-color: $bg-header
+            width: 20%
             ul
                 padding: 0
                 li 
@@ -106,6 +104,9 @@ header
                         border-top: 1px solid #fff
                         color: #000 !important
         .titles 
+            flex-grow: 1
+            background: url('../img/bg-head.jpg') no-repeat top center
+            background-size: cover
             display: flex
             flex-direction: column
             align-items: flex-end

@@ -133,12 +133,11 @@ header .header-main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: url("../img/bg-head.jpg") no-repeat top center;
-  background-size: cover;
 }
 
 header .header-main .menu {
   background-color: #28AFE9;
+  width: 20%;
 }
 
 header .header-main .menu ul {
@@ -166,6 +165,11 @@ header .header-main .menu ul li a:hover {
 }
 
 header .header-main .titles {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: url("../img/bg-head.jpg") no-repeat top center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
