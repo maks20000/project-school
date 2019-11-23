@@ -272,15 +272,23 @@ header .header-main .titles .title-item-big {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  font-size: 13px;
-  line-height: 18px;
   padding: 15px;
 }
 
-.events .content .events-list .item .text p {
+.events .content .events-list .item .text a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.events .content .events-list .item .text a p {
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.events .content .events-list .item .text a:hover {
+  text-decoration: none;
 }
 
 .events .content .events-list .item .text .publ-date {
@@ -288,7 +296,7 @@ header .header-main .titles .title-item-big {
   position: relative;
   display: block;
   margin-left: 25px;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
 .events .content .events-list .item .text .publ-date:before {
@@ -304,7 +312,38 @@ header .header-main .titles .title-item-big {
 
 .events .content .events-list .item .text .link {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 6px;
   color: #69C2EF;
+}
+
+.events .content .events-list .item .text .link a:hover {
+  text-decoration: underline;
+}
+
+.events .content .events-list .item .text .link a {
+  display: inline-block;
+  position: relative;
+  font-size: 13px;
+}
+
+.events .content .events-list .item .text .link a:before {
+  content: '';
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  background: url("../icons/arrow.png") no-repeat center center;
+  background-size: contain;
+  top: 7px;
+  right: -20px;
+}
+
+.content p {
+  margin-bottom: 10px;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.content .photo img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

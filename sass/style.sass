@@ -162,17 +162,22 @@ header
                     display: flex
                     flex-direction: column
                     flex-grow: 1
-                    font-size: 13px
-                    line-height: 18px
                     padding: 15px
-                    p 
+                    a
                         flex-grow: 1
+                        p 
+                            color: #000
+                            font-size: 13px
+                            line-height: 18px
+                        &:hover
+                            text-decoration: none
+                                
                     .publ-date 
                         font-size: 12px
                         position: relative
                         display: block
                         margin-left: 25px
-                        margin-top: 10px
+                        margin-top: 3px
                         &:before
                             content: ''
                             background: url('../icons/clock.png') no-repeat center center
@@ -184,8 +189,31 @@ header
                             position: absolute
                     .link 
                         text-align: center
-                        margin-top: 10px
+                        margin-top: 6px
                         color: #69C2EF
+                        a:hover
+                            text-decoration: underline
+                        a
+                            display: inline-block
+                            position: relative
+                            font-size: 13px
+                            &:before
+                                content: ''
+                                width: 15px
+                                height: 10px
+                                position: absolute
+                                background: url('../icons/arrow.png') no-repeat center center
+                                background-size: contain
+                                top: 7px
+                                right: -20px
+.content 
+    p 
+        margin-bottom: 10px
+        line-height: 21px
+        font-size: 14px
+    .photo 
+        img 
+            width: 100%
                                 
                             
 
