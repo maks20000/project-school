@@ -130,18 +130,62 @@ header
                 line-height: 26px
 .events
     .content
-        padding: 35px 20px
+        padding: 35px 0px
         .events-title 
             display: flex
             justify-content: space-between
             a
                 font-size: 15px
-
+                position: relative
+                &:before
+                    content: ''
+                    width: 15px
+                    height: 15px
+                    position: absolute
+                    background: url('../icons/arrow.png') no-repeat center center
+                    background-size: contain
+                    right: 0
+            
         .events-list
+            margin-top: 10px
             .item
+                display: flex
+                flex-direction: column
                 img 
                     width: 100%
+                .text 
+                    display: flex
+                    flex-direction: column
+                    flex-grow: 1
+                    font-size: 14px
+                    line-height: 18px
+                    padding: 15px
+                    p 
+                        flex-grow: 1
+                    .publ-date 
+                        font-size: 12px
+                        position: relative
+                        display: block
+                        margin-left: 25px
+                        margin-top: 10px
+                        &:before
+                            content: ''
+                            background: url('../icons/clock.png') no-repeat center center
+                            background-size: contain
+                            width: 15px
+                            height: 15px
+                            left: -25px
+                            top: 1px
+                            position: absolute
+                    .link 
+                        text-align: center
+                        margin-top: 30px
+                        color: #69C2EF
+                                
+                            
+
                 
+            
 
 
 
