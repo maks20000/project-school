@@ -15,6 +15,21 @@ p
 h2 
     font-size: 20px
 
+.dropdown-link:after
+    display: inline-block
+    margin-left: .255em
+    content: ""
+    background: url('../icons/arrow-down-white.png') no-repeat center center
+    background-size: contain
+    width: 10px
+    height: 10px
+    margin-top: -5px
+    margin-left: 10px
+
+.dropdown-link:hover:after
+    background: url('../icons/arrow-down-blck2.png') no-repeat center center
+    background-size: contain
+
 .menu
     background-color: $bg-header
     min-width: 20%
@@ -70,6 +85,7 @@ header
                     color: #ffffff
                     padding: 1.1rem 0
                     text-decoration: none !important
+                    position: relative
                     
                 a:hover 
                     background-color: #0193DE
@@ -91,6 +107,7 @@ header
                     flex-direction: column
                     li 
                         width: 100%
+                        border-top: 1px solid #32B0E7
                         a
                             text-align: left
                             font-size: 13px
@@ -133,11 +150,11 @@ header
             padding-right: 25px
             .block-title
                 background-color: rgba(0, 0, 0, 0.4)
-                padding: 15px
+                padding: 15px 30px
                 color: #fff
                 border-radius: 5px
             .title-item-small
-                max-width: 300px
+                max-width: 307px
                 font-size: 15px
                 font-weight: 300
             .title-item-big
