@@ -30,6 +30,10 @@ h2
     background: url('../icons/arrow-down-blck2.png') no-repeat center center
     background-size: contain
 
+.dropdown-up
+    top: auto !important
+    bottom: 0
+
 .menu
     background-color: $bg-header
     min-width: 20%
@@ -37,6 +41,7 @@ h2
         padding: 0
         li 
             border-top: 1px solid #63C1EE
+            position: relative
             a
                 font-size: 14px
                 display: block
@@ -49,6 +54,25 @@ h2
                 background-color: #0193DE
                 border-top: 1px solid #fff
                 color: #000 !important
+        li:hover > .dropdown 
+                display: inherit
+        .dropdown
+                position: absolute
+                display: none
+                right: 100%
+                top: 0
+                min-width: 100%
+                background-color: #5EBEE7
+                ul 
+                    display: flex
+                    flex-direction: column
+                    li 
+                        width: 100%
+                        border-top: 1px solid #32B0E7
+                        a
+                            text-align: left
+                            font-size: 13px
+                            padding: 0.6rem 1.5rem
 
 .container 
     .up-line
@@ -164,6 +188,20 @@ header
                 font-size: 19px
                 font-weight: 300
                 line-height: 26px
+        .dropdown-link-left:before
+            display: inline-block
+            content: ''
+            background: url('../icons/arrow-down-white.png') no-repeat center center
+            background-size: contain
+            transform: rotateZ(90deg)
+            width: 10px
+            height: 10px
+            margin-top: -5px
+            margin-left: -15px
+            margin-right: 5px
+        .dropdown-link-left:hover:before
+            background: url('../icons/arrow-down-blck2.png') no-repeat center center
+            background-size: contain
 .events
     a 
         color: #69C2EF
@@ -263,6 +301,7 @@ footer
                 text-align: center
                 margin-left: 27px
                 height: 100%
+                position: relative
                 a 
                     font-size: 14px
                     padding: 1.1rem 1.1rem
@@ -274,6 +313,35 @@ footer
                         color: #fff
             li:first-child 
                 margin: 0
+
+            li:hover > .dropdown 
+                display: inherit
+            .dropdown
+                position: absolute
+                display: none
+                top: 100%
+                min-width: 100%
+                background-color: #E7E7E7
+                z-index: 100
+                ul 
+                    display: flex
+                    flex-direction: column
+                    li 
+                        width: 100%
+                        border-top: 1px solid #C7C7C7
+                        margin: 0
+                        a
+                            text-align: left
+                            font-size: 13px
+                            padding: 0.6rem 1.5rem
+                        a:hover 
+                            color: #fff !important
+            .dropdown-link:after 
+                background: url('../icons/arrow-down-blck2.png') no-repeat center center
+                background-size: contain
+            .dropdown-link:hover:after 
+                background: url('../icons/arrow-down-white.png') no-repeat center center
+                background-size: contain
     .footer-contacts
         font-size: 15px
         line-height: 27px

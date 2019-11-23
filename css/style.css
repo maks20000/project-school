@@ -35,6 +35,11 @@ h2 {
   background-size: contain;
 }
 
+.dropdown-up {
+  top: auto !important;
+  bottom: 0;
+}
+
 .menu {
   background-color: #28AFE9;
   min-width: 20%;
@@ -46,6 +51,7 @@ h2 {
 
 .menu ul li {
   border-top: 1px solid #63C1EE;
+  position: relative;
 }
 
 .menu ul li a {
@@ -62,6 +68,40 @@ h2 {
   background-color: #0193DE;
   border-top: 1px solid #fff;
   color: #000 !important;
+}
+
+.menu ul li:hover > .dropdown {
+  display: inherit;
+}
+
+.menu ul .dropdown {
+  position: absolute;
+  display: none;
+  right: 100%;
+  top: 0;
+  min-width: 100%;
+  background-color: #5EBEE7;
+}
+
+.menu ul .dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu ul .dropdown ul li {
+  width: 100%;
+  border-top: 1px solid #32B0E7;
+}
+
+.menu ul .dropdown ul li a {
+  text-align: left;
+  font-size: 13px;
+  padding: 0.6rem 1.5rem;
 }
 
 .container .up-line {
@@ -260,6 +300,25 @@ header .header-main .titles .title-item-big {
   line-height: 26px;
 }
 
+header .header-main .dropdown-link-left:before {
+  display: inline-block;
+  content: '';
+  background: url("../icons/arrow-down-white.png") no-repeat center center;
+  background-size: contain;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -15px;
+  margin-right: 5px;
+}
+
+header .header-main .dropdown-link-left:hover:before {
+  background: url("../icons/arrow-down-blck2.png") no-repeat center center;
+  background-size: contain;
+}
+
 .events a {
   color: #69C2EF;
   font-size: 15px;
@@ -421,6 +480,7 @@ footer .footer-menu ul li {
   text-align: center;
   margin-left: 27px;
   height: 100%;
+  position: relative;
 }
 
 footer .footer-menu ul li a {
@@ -438,6 +498,55 @@ footer .footer-menu ul li a:hover {
 
 footer .footer-menu ul li:first-child {
   margin: 0;
+}
+
+footer .footer-menu ul li:hover > .dropdown {
+  display: inherit;
+}
+
+footer .footer-menu ul .dropdown {
+  position: absolute;
+  display: none;
+  top: 100%;
+  min-width: 100%;
+  background-color: #E7E7E7;
+  z-index: 100;
+}
+
+footer .footer-menu ul .dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-menu ul .dropdown ul li {
+  width: 100%;
+  border-top: 1px solid #C7C7C7;
+  margin: 0;
+}
+
+footer .footer-menu ul .dropdown ul li a {
+  text-align: left;
+  font-size: 13px;
+  padding: 0.6rem 1.5rem;
+}
+
+footer .footer-menu ul .dropdown ul li a:hover {
+  color: #fff !important;
+}
+
+footer .footer-menu ul .dropdown-link:after {
+  background: url("../icons/arrow-down-blck2.png") no-repeat center center;
+  background-size: contain;
+}
+
+footer .footer-menu ul .dropdown-link:hover:after {
+  background: url("../icons/arrow-down-white.png") no-repeat center center;
+  background-size: contain;
 }
 
 footer .footer-contacts {
