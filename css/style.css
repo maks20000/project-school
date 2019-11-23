@@ -131,7 +131,11 @@ h2 {
   padding: 0.6rem 1.5rem;
 }
 
-.container .up-line {
+.container {
+  max-width: 1170px;
+}
+
+.up-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,15 +148,15 @@ h2 {
   padding: 0 20px;
 }
 
-.container .up-line img {
+.up-line img {
   width: 160px;
 }
 
-.container .up-line .contacts {
+.up-line .contacts {
   text-align: right;
 }
 
-.container .up-line .contacts .phone {
+.up-line .contacts .phone {
   font-size: 26px;
 }
 
@@ -618,6 +622,7 @@ footer .footer-down {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 10px;
+    padding: 0;
   }
   header .up-line .hide-menu {
     display: block;
@@ -629,6 +634,7 @@ footer .footer-down {
     display: none;
   }
   header nav {
+    display: none;
     background-color: #28AFE9;
     position: absolute;
     z-index: 100;
@@ -665,6 +671,9 @@ footer .footer-down {
     display: none;
     position: absolute;
     z-index: 100;
+  }
+  header .header-main .menu a {
+    padding: 1.1rem 1.5rem;
   }
   footer .footer-menu {
     display: none;
