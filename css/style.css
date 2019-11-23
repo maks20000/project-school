@@ -368,6 +368,7 @@ footer .footer-menu ul li {
 }
 
 footer .footer-menu ul li a {
+  font-size: 14px;
   padding: 1.1rem 1.1rem;
   display: block;
   color: #000;
@@ -384,8 +385,8 @@ footer .footer-menu ul li:first-child {
 }
 
 footer .footer-contacts {
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 27px;
   padding-top: 20px;
 }
 
@@ -393,7 +394,16 @@ footer .footer-contacts p {
   margin-bottom: 20px;
 }
 
+footer .map {
+  padding-top: 20px;
+}
+
 footer .map img {
   width: 100%;
+}
+
+footer .footer-down {
+  padding: 15px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
