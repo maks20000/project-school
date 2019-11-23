@@ -17,7 +17,7 @@ h2
 
 .menu
     background-color: $bg-header
-    width: 20%
+    min-width: 20%
     ul
         padding: 0
         li 
@@ -84,12 +84,17 @@ header
                 position: absolute
                 display: inherit
                 top: 100%
-                width: 100%
+                min-width: 100%
+                background-color: #5EBEE7
                 ul 
                     display: flex
                     flex-direction: column
                     li 
                         width: 100%
+                        a
+                            text-align: left
+                            font-size: 13px
+                            padding: 0.6rem 1.5rem
         .search
             display: flex
             align-items: center
@@ -132,13 +137,13 @@ header
                 color: #fff
                 border-radius: 5px
             .title-item-small
-                min-width: 239px
+                max-width: 300px
                 font-size: 15px
-                font-weight: 400
+                font-weight: 300
             .title-item-big
-                min-width: 353px
+                max-width: 400px
                 font-size: 19px
-                font-weight: 400
+                font-weight: 300
                 line-height: 26px
 .events
     a 
