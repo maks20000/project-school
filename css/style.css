@@ -130,6 +130,10 @@ header nav ul li a:hover {
   color: #000 !important;
 }
 
+header nav ul li:hover > .dropdown {
+  display: inherit;
+}
+
 header nav ul .icon1 {
   display: block;
   width: 40px;
@@ -140,7 +144,7 @@ header nav ul .icon1 {
 
 header nav ul .dropdown {
   position: absolute;
-  display: inherit;
+  display: none;
   top: 100%;
   min-width: 100%;
   background-color: #5EBEE7;
