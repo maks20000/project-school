@@ -324,6 +324,17 @@ header
     .photo 
         img 
             width: 100%
+        .photo-small 
+            margin-top: 30px
+            img
+                height: 100%
+            .row 
+                flex-wrap: nowrap
+                margin: 0
+                .img-item 
+                    max-height: 100%
+                .img-item:not(:first-child)
+                    margin-left: 15px
 footer 
     .footer-menu 
         background-color: #DDDDDD
@@ -466,6 +477,10 @@ footer
     .events
         .events-list
             .item:not(:first-child)
+                display: none
+    .content 
+        .photo 
+            .photo-small
                 display: none
     footer 
         .map

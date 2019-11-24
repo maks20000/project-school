@@ -514,6 +514,28 @@ header .header-main .dropdown-link-left:hover:before {
   width: 100%;
 }
 
+.content .photo .photo-small {
+  margin-top: 30px;
+}
+
+.content .photo .photo-small img {
+  height: 100%;
+}
+
+.content .photo .photo-small .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+}
+
+.content .photo .photo-small .row .img-item {
+  max-height: 100%;
+}
+
+.content .photo .photo-small .row .img-item:not(:first-child) {
+  margin-left: 15px;
+}
+
 footer .footer-menu {
   background-color: #DDDDDD;
 }
@@ -716,6 +738,9 @@ footer .footer-down {
     display: none;
   }
   .events .events-list .item:not(:first-child) {
+    display: none;
+  }
+  .content .photo .photo-small {
     display: none;
   }
   footer .map {

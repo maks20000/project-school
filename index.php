@@ -171,18 +171,7 @@
 <br><br>Краснообск - уникальное место на карте Новосибирского района. Здесь среди живописной природы царит атмосфера культуры умственного труда и научного поиска, интеллигентности и доброжелательности. Жители рабочего поселка демонстрируют активную нравственную и социальную позицию, умение конструктивно решать возникающие проблемы. Неотъемлемой частью этого пространства являются образовательные учреждения Краснообска.			
 				   </p>
                 </div>
-                <div class="photo col-md-6"> <a href="#"><img src="img/photo-1.jpg" alt=""></a>
-                    <div class="photo-small">
-                        <div class="row">
-                            <div class="img-item"><img src="/img/photo-800x400.jpg" alt=""></div>
-                            <div class="img-item"><img src="/img/photo-800x400.jpg" alt=""></div>
-                        </div>
-                        <div class="row">
-                            <div class="img-item"><img src="/img/photo-500x500.jpg" alt=""></div>
-                            <div class="img-item"><img src="/img/photo-800x400.jpg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="photo col-md-6"> <a href="#"><img src="img/photo-1.jpg" alt=""></a></div>
             </div>
         </div>
     </section>
