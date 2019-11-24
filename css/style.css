@@ -18,6 +18,11 @@ h2 {
   font-size: 20px;
 }
 
+.active {
+  background-color: #0193DE;
+  color: #000 !important;
+}
+
 .hide-menu {
   position: relative;
   width: 25px;
@@ -97,6 +102,10 @@ h2 {
   color: #000 !important;
 }
 
+.menu ul li .active {
+  border-top: 1px solid #fff;
+}
+
 .menu ul li:hover > .dropdown {
   display: inherit;
 }
@@ -164,6 +173,10 @@ h2 {
 
 .up-line .contacts .phone {
   font-size: 26px;
+}
+
+.up-line .contacts .school-name {
+  display: none;
 }
 
 header nav {
@@ -358,7 +371,8 @@ header .header-main .dropdown-link-left:hover:before {
 
 .events a {
   color: #69C2EF;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .events .content {
@@ -375,7 +389,6 @@ header .header-main .dropdown-link-left:hover:before {
 }
 
 .events .content .events-title a {
-  font-size: 13px;
   position: relative;
   margin-right: 20px;
 }
@@ -433,6 +446,7 @@ header .header-main .dropdown-link-left:hover:before {
   color: #000;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 300;
 }
 
 .events .content .events-list .item .text a:hover {
@@ -511,13 +525,17 @@ footer .footer-menu ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
 }
 
 footer .footer-menu ul li {
   text-align: center;
-  margin-left: 27px;
+  margin-left: 0px;
   height: 100%;
   position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 footer .footer-menu ul li a {
@@ -531,6 +549,10 @@ footer .footer-menu ul li a:hover {
   background-color: #038CDB;
   text-decoration: none;
   color: #fff;
+}
+
+footer .footer-menu ul li .active {
+  color: #fff !important;
 }
 
 footer .footer-menu ul li:first-child {
@@ -627,7 +649,7 @@ footer .footer-down {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 0;
   }
   header .up-line .hide-menu {
@@ -636,8 +658,14 @@ footer .footer-down {
   header .up-line .logo {
     display: none;
   }
-  header .up-line .email {
+  header .up-line .contacts .email {
     display: none;
+  }
+  header .school-name {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
   }
   header nav {
     display: none;

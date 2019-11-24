@@ -16,6 +16,10 @@ p
 h2 
     font-size: 20px
 
+.active 
+    background-color: #0193DE
+    color: #000 !important
+
 .hide-menu 
     position: relative
     width: 25px
@@ -75,6 +79,8 @@ h2
                 background-color: #0193DE
                 border-top: 1px solid #fff
                 color: #000 !important
+            .active 
+                border-top: 1px solid #fff
         li:hover > .dropdown 
                 display: inherit
         .dropdown
@@ -113,6 +119,8 @@ h2
         .phone 
             font-size: 26px
         .emali
+        .school-name 
+            display: none
 header
     nav
         background-color: $bg-header
@@ -229,14 +237,14 @@ header
 .events
     a 
         color: #69C2EF
-        font-size: 15px
+        font-size: 13px
+        font-weight: 400
     .content
         padding: 35px 0px 15px
         .events-title 
             display: flex
             justify-content: space-between
             a
-                font-size: 13px
                 position: relative
                 margin-right: 20px
                 &:before
@@ -267,6 +275,7 @@ header
                             color: #000
                             font-size: 13px
                             line-height: 18px
+                            font-weight: 300
                         &:hover
                             text-decoration: none
                                 
@@ -321,11 +330,13 @@ footer
         ul 
             display: flex
             justify-content: center
+            padding: 0
             li
                 text-align: center
-                margin-left: 27px
+                margin-left: 0px
                 height: 100%
                 position: relative
+                flex-grow: 1
                 a 
                     font-size: 14px
                     padding: 1.1rem 1.1rem
@@ -335,6 +346,8 @@ footer
                         background-color: #038CDB
                         text-decoration: none
                         color: #fff
+                .active 
+                    color: #fff !important
             li:first-child 
                 margin: 0
 
@@ -396,14 +409,20 @@ footer
     header
         .up-line
             align-items: center
-            margin-bottom: 10px
+            margin-bottom: 0px
             padding: 0
             .hide-menu 
                 display: block
             .logo 
                 display: none
-            .email 
-                display: none
+            .contacts    
+                .email 
+                    display: none
+        .school-name 
+            font-size: 20px
+            text-align: center
+            display: block
+            margin: 0 auto
             
         nav
             display: none
