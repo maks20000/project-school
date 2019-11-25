@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	 <title>Краснообская средняя общеобразовательная школа №2, сайт школы, контакты, информация о школе, расписание</title>
 	 <meta name="description" content="Школьный сайт, Есть информация о школе, коллективе, событиях и анонсах. Удобно и просто.">
   <meta name="keywords" content="школа №2, краснообск, сайт школы, контакты, информация о школе, расписание">
-    
+  
+   <meta itemprop="image" content="img/car6.jpg" />
+    <meta property="og:url" content="img/car6.jpg" />
+    <meta property="og:image" content="img/car6.jpg" /> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Краснообская средняя общеобразовательная школа №2, сайт школы, контакты, информация о школе, расписание</title>
-	
+   
 	<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
   <link rel="shortcut icon" href="favicon.png">
   
@@ -39,42 +43,51 @@
                     </div>
                 </div>
             </div>
-            <div class="school-name">школа №2 Краснообск</div>
+            <div class="school-name">школа №2, Краснообск</div>
             <nav id="header-menu">
                 <ul>
-                    <li><a class="dropdown-link" href="">Учителям</a>
-                        <div class="menu dropdown">
+                    <li><a class="active" href="/">Главная</a>
+                       <!-- <div class="menu dropdown">
                             <ul>
                                 <li><a href="#">Доска объявлений</a></li>
                                 <li><a href="#">Доска объявлений проверяю на длинные названия</a></li>
                                 <li><a href="#">Доска объявлений</a></li>
                             </ul>
-                        </div>
+                        </div>-->
                     </li>
-                    <li><a class="dropdown-link" href="#">Поступающим</a>
+                    <li><a class="dropdown-link" href="#">Сведения об образовательной организации</a>
                         <div class="menu dropdown">
                             <ul>
-                                <li><a href="#">Доска объявлений</a></li>
+                                <li><a href="#">Доска объявлений проверяю на длинные названия</a></li>
                                 <li><a href="#">Доска объявлений</a></li>
                                 <li><a href="#">Доска объявлений</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">Учащимся</a></li>
-                    <li><a class="active" href="#">Родителям</a></li>
-                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">--</a></li>
+                    <li><a class="" href="#">--</a></li>
+        
                     <li><a href="#"><img src="img/icons/nav-icon1.png" alt="icon1" width="30px"></a></li>
                     <li class="search"><input type="text" placeholder="Поиск"> <button></button></li>
                 </ul>
             </nav>
+			<?	$quotes = array(); // Инициализируем пустой массив
+  $quotes[] = "Пусть лучше я буду ярчайшим метеором, чем вечной, но сонной планетой..."; // Первая цитата
+  $quotes[] = "В старших классах самостоятельная работа перестает быть таковой. Она коллективная"; // Вторая цитата
+$quotes[] = "1 сентября. Школа, осень, чистый лист, звонок, уроки, оценки..."; // Вторая цитата
+
+ 
+  $numberss = mt_rand(0, count($quotes) - 1); // Берём случайное число от 0 до (длины массива минус 1) включительно
+  $tanc = $quotes[$numberss]; // Выводим цитату
+  ?>
             <div class="header-main">
                 <div class="titles">
                     <div class="block-title title-item-small"><p>Краснообская средняя общеобразовательная школа №2</p></div>
-                    <div class="block-title title-item-big"><p>Пусть я лучше буду ярчайшим метеором, чем вечной, но сонной планетой</p></div>
+                    <div class="block-title title-item-big"><p><?php echo $tanc; ?></p></div>
                 </div>
                 <div id="right-menu" class="menu">
                     <ul>
-                        <li><a class="dropdown-link-left" href="">Доска объявлений</a>
+                        <li><a class="dropdown-link-left" href="">--</a>
                             <div class="menu dropdown">
                                 <ul>
                                     <li><a href="#">Доска объявлений проверяю на длинные названия</a></li>
@@ -83,7 +96,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a class="dropdown-link-left" href="#">Школьный автобус</a>
+                        <li><a class="dropdown-link-left" href="#">--</a>
                             <div class="menu dropdown">
                                 <ul>
                                     <li><a href="#">Доска объявлений</a></li>
@@ -92,11 +105,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a class="active" href="#">Архив</a></li>
-                        <li><a href="#">Библиотека</a></li>
-                        <li><a href="#">ГТО</a></li>
-                        <li><a class="dropdown-link-left" href="">ОРКСЭ</a>
+                        <li><a href="#">--</a></li>
+                        <li><a class="active" href="#">--</a></li>
+                        <li><a href="#">--</a></li>
+                        <li><a href="#">--</a></li>
+                        <li><a class="dropdown-link-left" href="">--</a>
                             <div class="menu dropdown dropdown-up">
                                 <ul>
                                     <li><a href="#">Доска объявлений</a></li>
@@ -164,14 +177,33 @@
             <div class="row">
                 <div class="content-descr col-md-6">
                     <p>
-					Сегодня МКОУ Краснообская школа № 2 это дружный коллектив учителей, обучающихся и их родителей (законных представителей). В учреждении работают талантливые, перспективные, творческие учителя. В коллективе успешно сочетаются мудрость возраста и энергия молодости. К новому учебному году коллектив пополнится новыми педагогическими кадрами.
+					Сегодня МКОУ Краснообская школа №2 это дружный коллектив учителей, обучающихся и их родителей (законных представителей). В учреждении работают талантливые, перспективные, творческие учителя. В коллективе успешно сочетаются мудрость возраста и энергия молодости. К новому учебному году коллектив пополнится новыми педагогическими кадрами.
 <br><br>Создавая условия для формирования конкурентоспособной, творчески мыслящей личности, умеющей находить нестандартные решения, коллектив приступил к реализации государственных образовательных стандартов второго поколения. Обучающиеся и их родители имеют возможность принимать участие в формировании основных образовательных программ Учреждения. Ежегодно идет увеличение гимназических классов, в учебных планах которых предусмотрено увеличение часов на изучение русского и иностранного языков, литературы, истории и обществознания. В рамках внеучебной деятельности планируется организация работы дискуссионного клуба «Дебаты», курса «Культура исследовательской деятельности».
 <br><br>Развивается направление углубленного изучения отдельных предметов в 10-х и 11-х классах. К чтению профильных и элективных курсов привлекаются специалисты высшей школы, расширяется спектр предлагаемых спецкурсов.
 <br><br>Открывая новую страницу истории школы, мы надеемся на понимающих, деятельных родителей, талантливых, умных, увлеченных учеников, на мудрое и плодотворное сотрудничество. Двери школы распахнуты для всех, кто рассчитывает на атмосферу добра и творчества.
 <br><br>Краснообск - уникальное место на карте Новосибирского района. Здесь среди живописной природы царит атмосфера культуры умственного труда и научного поиска, интеллигентности и доброжелательности. Жители рабочего поселка демонстрируют активную нравственную и социальную позицию, умение конструктивно решать возникающие проблемы. Неотъемлемой частью этого пространства являются образовательные учреждения Краснообска.			
 				   </p>
                 </div>
-                <div class="photo col-md-6"> <a href="#"><img src="img/photo-1.jpg" alt=""></a></div>
+                <div class="photo col-md-6"> <a href="#"><img src="img/photo-1.jpg" alt=""></a>
+                    <div class="photo-small">
+                        <div class="row">
+                            <div class="img-item"><img src="img/photo-800x401.jpg" alt=""></div>
+                            <div class="img-item"><img src="img/photo-800x400.jpg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="img-item"><img src="img/photo-500x502.jpg" alt=""></div>
+                            <div class="img-item"><img src="img/photo-800x500.jpg" alt=""></div>
+                        </div>
+                     <!--   <div class="row">
+                            <div class="img-item"><img src="img/photo-800x504.jpg" alt=""></div>
+                            <div class="img-item"><img src="img/photo-500x501.jpg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="img-item"><img src="img/photo-500x503.jpg" alt=""></div>
+                            <div class="img-item"><img src="img/photo-500x500.jpg" alt=""></div>
+                        </div> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -179,7 +211,7 @@
         <div class="container">
             <div class="footer-menu">
                 <ul>
-                    <li><a class="dropdown-link" href="#">Учителям</a>
+                    <li><a class="dropdown-link" href="#">Сведения об образовательной организации</a>
                         <div class="menu dropdown">
                             <ul>
                                 <li><a href="#">Доска объявлений</a></li>
@@ -197,15 +229,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a class="active" href="#">Учащимся</a></li>
-                    <li><a href="#">Учащимся</a></li>
-                    <li><a href="#">Учащимся</a></li>
+                    <li><a class="active" href="#">Родителям</a></li>
+                 
                 </ul>
             </div>
             <div class="row">
                 <div class="footer-contacts col-md-6">
                     <h2>Контакты</h2>
-                    <p>Телефон: <b>+7 (383) 348-3770, +7 (383) 348-4652</b></p>
+                    <p>Телефоны: <b>+7 (383) 348-3770, +7 (383) 348-4652</b></p>
                     <p>Факс: <b>+7 (383) 348-3770</b></p>
                     <p>E-mail: <b>school2@edunor.ru</b></p>
                     <p>Адрес: <b>630501, Российская Федерация, Сибирский федеральный округ,

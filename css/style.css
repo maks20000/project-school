@@ -526,6 +526,7 @@ header .header-main .dropdown-link-left:hover:before {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 0;
+  padding-bottom: 15px;
 }
 
 .content .photo .photo-small .row .img-item {
@@ -720,6 +721,9 @@ footer .footer-down {
   header nav ul .search {
     display: none;
   }
+  header .header-main .titles {
+    display: none;
+  }
   header .header-main .menu {
     display: none;
     position: absolute;
@@ -728,14 +732,17 @@ footer .footer-down {
   header .header-main .menu a {
     padding: 1.1rem 1.5rem;
   }
+  .md-none {
+    display: none !important;
+  }
   footer .footer-menu {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-  header .header-main .titles {
-    display: none;
+  header nav {
+    width: 50%;
   }
   .events .events-list .item:not(:first-child) {
     display: none;
