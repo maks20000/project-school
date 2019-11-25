@@ -443,6 +443,12 @@ footer
             background-color: $bg-header
             position: absolute
             z-index: 100
+            width: 60%    
+            ul 
+                li 
+                    a 
+                        text-align: left
+                        font-size: 16px
             ul 
                 display: none
                 display: flex
@@ -471,6 +477,7 @@ footer
                 a
                     padding: 1.1rem 1.5rem
                     text-align: right
+                    font-size: 16px
     footer 
         .footer-menu
             display: none
@@ -481,15 +488,7 @@ footer
         display: none !important
            
 
-@media screen and ( max-width: 411px)    
-    header 
-        nav 
-            width: 60%    
-            ul 
-                li 
-                    a 
-                        text-align: left
-                        font-size: 16px
+@media screen and ( max-width: 575px)    
                
     .events
         .events-list
