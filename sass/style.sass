@@ -60,7 +60,7 @@ h2
 
 .menu
     background-color: $right-menu
-    min-width: 20%
+    width: 20%
     ul
         padding: 0
         li 
@@ -75,6 +75,7 @@ h2
                 width: 100%
                 text-decoration: none
                 border-top: 1px solid transparent
+                position: relative
             a:hover 
                 background-color: #0193DE
                 border-top: 1px solid #fff
@@ -231,6 +232,8 @@ header
             margin-top: -5px
             margin-left: -15px
             margin-right: 5px
+            position: absolute
+            top: 50%
         .dropdown-link-left:hover:before
             background: url('../img/icons/arrow-down-blck2.png') no-repeat center center
             background-size: contain
@@ -464,21 +467,24 @@ footer
                 display: none
                 position: absolute
                 z-index: 100
+                width: 60%
                 a
                     padding: 1.1rem 1.5rem
-    .md-none 
-        display: none !important
+                    text-align: right
     footer 
         .footer-menu
             display: none
         .map
+
+@media screen and ( max-width: 778px)
+    .md-none 
+        display: none !important
            
 
-@media screen and ( max-width: 767px)    
+@media screen and ( max-width: 411px)    
     header 
         nav 
-            width: 60%
-            
+            width: 60%    
             ul 
                 li 
                     a 
