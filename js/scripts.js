@@ -3,9 +3,9 @@ $(function () {
     let hide_menu = $(".hide-menu");
     hide_menu.on('click',function() {
         var target = $(this).attr("target");
-        $(openned).toggle();
+        $(openned).toggleClass("visible");
         if (openned!=="#"+target) {
-            $("#"+target).toggle();
+            $("#"+target).toggleClass("visible");
             openned="#"+target;
         } else openned=undefined;
     })
