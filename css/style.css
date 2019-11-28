@@ -669,6 +669,31 @@ footer .footer-down {
   right: 0;
 }
 
+.sponsors-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.sponsors-line .item {
+  width: 150px;
+}
+
+.sponsors-line .item img {
+  width: 100%;
+}
+
+.sponsors-line .item p {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 991px) {
   .dropdown-link:after {
     display: none;
