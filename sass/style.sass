@@ -425,7 +425,6 @@ footer
 .sponsors-line 
     display: flex
     justify-content: center
-    flex-wrap: wrap
     align-items: stretch
 
     .item
@@ -527,6 +526,15 @@ footer
         .footer-menu
             display: none
         .map
+    .sponsors-line 
+        .item 
+            display: none
+            &:nth-child(1), &:nth-child(2)
+                display: block
+            &:nth-child(2) 
+                margin-right: 0
+                
+                
 
 @media screen and ( max-width: 778px)
     .md-none 
