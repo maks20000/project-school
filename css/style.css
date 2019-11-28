@@ -164,8 +164,6 @@ h2 {
 
 .up-line .contacts {
   text-align: right;
-  -ms-flex-preferred-size: 260px;
-      flex-basis: 260px;
 }
 
 .up-line .contacts .phone {
@@ -654,7 +652,9 @@ footer .footer-down {
 .begush {
   border: 0px solid #444;
   margin-bottom: -4px;
-  padding: 8px 0 0 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 8px 0 0 00px;
   font-size: 27px;
   color: #333;
   -webkit-box-flex: 1;
@@ -666,6 +666,7 @@ footer .footer-down {
 .begush marquee {
   width: 100%;
   position: absolute;
+  right: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -708,6 +709,7 @@ footer .footer-down {
   }
   header .school-name .begush {
     padding: 0;
+    margin: 0;
   }
   header .school-name .begush marquee {
     position: relative;
@@ -764,6 +766,9 @@ footer .footer-down {
     padding: 1.1rem 1.5rem;
     text-align: right;
     font-size: 16px;
+  }
+  .events .content {
+    padding-top: 0px;
   }
   footer .footer-menu {
     display: none;
