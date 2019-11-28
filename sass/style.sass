@@ -424,12 +424,18 @@ footer
         right: 0
 .sponsors-line 
     display: flex
-    justify-content: space-around
+    justify-content: center
     flex-wrap: wrap
     align-items: stretch
 
     .item
         width: 150px
+        margin-right: 20px
+        margin-left: 20px
+        &:first-child
+            margin-left: 0
+        &:last-child
+            margin-right: 0
         img 
             width: 100%
         p 

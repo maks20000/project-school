@@ -673,8 +673,9 @@ footer .footer-down {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: stretch;
@@ -684,6 +685,16 @@ footer .footer-down {
 
 .sponsors-line .item {
   width: 150px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.sponsors-line .item:first-child {
+  margin-left: 0;
+}
+
+.sponsors-line .item:last-child {
+  margin-right: 0;
 }
 
 .sponsors-line .item img {
