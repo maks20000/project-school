@@ -20,9 +20,6 @@ h2
     background-color: #0193DE
     color: #000 !important
 
-.visible 
-    display: block !important
-
 .hide-menu 
     position: relative
     width: 25px
@@ -115,11 +112,12 @@ h2
     margin-bottom: 15px
     padding: 0 20px
     .logo
-        flex-grow: 1
+        
         img
             width: 160px
     .contacts
         text-align: right
+        flex-basis: 260px
         .phone 
             font-size: 26px
         .emali
@@ -164,7 +162,6 @@ header
                 top: 100%
                 min-width: 100%
                 background-color: #5EBEE7
-                z-index: 1000
                 ul 
                     display: flex
                     flex-direction: column
@@ -412,6 +409,18 @@ footer
         padding: 15px
         text-align: center
 
+.begush 
+    border: 0px solid #444
+    margin-bottom: -4px
+    padding: 8px 0 0 20px
+    font-size: 27px
+    color: #333
+    flex-grow: 1
+    position: relative
+    marquee 
+        width: 100%
+        position: absolute
+
 
 
 @media screen and ( max-width: 991px)
@@ -436,11 +445,19 @@ footer
             .contacts    
                 .email 
                     display: none
+            .begush 
+                display: none     
+
         .school-name 
             font-size: 20px
             text-align: center
             display: block
             margin: 0 auto
+
+            .begush 
+                padding: 0
+                marquee 
+                    position: relative
             
         nav
             display: none

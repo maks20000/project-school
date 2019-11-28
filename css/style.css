@@ -23,10 +23,6 @@ h2 {
   color: #000 !important;
 }
 
-.visible {
-  display: block !important;
-}
-
 .hide-menu {
   position: relative;
   width: 25px;
@@ -162,18 +158,14 @@ h2 {
   padding: 0 20px;
 }
 
-.up-line .logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 .up-line .logo img {
   width: 160px;
 }
 
 .up-line .contacts {
   text-align: right;
+  -ms-flex-preferred-size: 260px;
+      flex-basis: 260px;
 }
 
 .up-line .contacts .phone {
@@ -243,7 +235,6 @@ header nav ul .dropdown {
   top: 100%;
   min-width: 100%;
   background-color: #5EBEE7;
-  z-index: 1000;
 }
 
 header nav ul .dropdown ul {
@@ -660,6 +651,23 @@ footer .footer-down {
   text-align: center;
 }
 
+.begush {
+  border: 0px solid #444;
+  margin-bottom: -4px;
+  padding: 8px 0 0 20px;
+  font-size: 27px;
+  color: #333;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+.begush marquee {
+  width: 100%;
+  position: absolute;
+}
+
 @media screen and (max-width: 991px) {
   .dropdown-link:after {
     display: none;
@@ -689,11 +697,20 @@ footer .footer-down {
   header .up-line .contacts .email {
     display: none;
   }
+  header .up-line .begush {
+    display: none;
+  }
   header .school-name {
     font-size: 20px;
     text-align: center;
     display: block;
     margin: 0 auto;
+  }
+  header .school-name .begush {
+    padding: 0;
+  }
+  header .school-name .begush marquee {
+    position: relative;
   }
   header nav {
     display: none;
