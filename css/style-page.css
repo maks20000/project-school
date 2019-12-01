@@ -14,6 +14,7 @@
 
 .content .side {
   margin-left: 7px;
+  padding-top: 10px;
   width: 19%;
   border: 1px solid #999;
   padding-bottom: 50px;
@@ -26,15 +27,25 @@
 
 .content .side .menu li {
   border: none;
-  padding-left: 3.0rem;
   padding-right: 1.0rem;
 }
 
 .content .side .menu a {
   color: #28AFE9;
   padding: 1rem .6rem 1rem;
-  border-bottom: 1px dashed #000;
+  padding-left: 3.0rem;
   display: inline-block;
+  position: relative;
+}
+
+.content .side .menu a:after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  border-bottom: 1px dashed #000000;
+  bottom: 0;
+  left: 2.2rem;
 }
 
 .content .side .menu a:hover {
@@ -48,12 +59,9 @@
   z-index: 1000;
 }
 
-.content .side .menu .dropdown img {
-  width: 100%;
-}
-
 .content .side .menu .dropdown a {
   color: #28AFE9;
+  padding-left: 2.1rem;
 }
 
 .content .side .menu .dropdown a:hover {
