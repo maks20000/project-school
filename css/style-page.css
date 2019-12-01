@@ -40,7 +40,7 @@
 
 .content .side .menu a:after {
   content: '';
-  width: 50%;
+  width: 77%;
   height: 1px;
   position: absolute;
   border-bottom: 1px dashed #000000;
