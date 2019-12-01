@@ -95,31 +95,10 @@ $quotes[] = "1 сентября. Школа, осень, чистый лист, 
  
   $numberss = mt_rand(0, count($quotes) - 1); // Берём случайное число от 0 до (длины массива минус 1) включительно
   $tanc = $quotes[$numberss]; // Выводим цитату
-  
-  // Дата по-русски
-function getDateRus(){
-    $monthes = array(
-        1 => 'января', 2 => 'февраля', 3 => 'марта', 4 => 'апреля',
-        5 => 'мая', 6 => 'июня', 7 => 'июля', 8 => 'августа',
-        9 => 'сентября', 10 => 'октября', 11 => 'ноября', 12 => 'декабря'
-    );
-    return ( (int)date('d') . ' ' . $monthes[(date('n'))]);
-}
-
-// День недели по-русски
-function getDayRus(){
-    $days = array(
-        'воскресенье', 'понедельник', 'вторник', 'среда',
-        'четверг', 'пятница', 'суббота'
-    );
-    return $days[(date('w'))];
-}
-
-//echo "Сегодня: " . getDateRus() . ", " . getDayRus();
   ?>
             <div class="header-main">
                 <div class="titles">
-                    <div class="block-title title-item-small"><p>МКОУ Краснообская СОШ №2, <? echo "" . getDayRus() . ", " . getDateRus();?></p></div>
+                    <div class="block-title title-item-small"><p>МКОУ Краснообская СОШ №2</p></div>
                     <div class="block-title title-item-big"><p><?php echo $tanc; ?></p></div>
                 </div>
                 <div id="right-menu" class="menu">
@@ -257,7 +236,7 @@ function getDayRus(){
                     </div>
                 </div>
             </div>
-          <!--  <div class="sponsors-line">
+            <div class="sponsors-line">
                 <div class="item">
                     <img src="img/logo.PNG" alt="logo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -270,7 +249,7 @@ function getDayRus(){
                     <img src="img/logo.PNG" alt="logo">
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
     <footer>

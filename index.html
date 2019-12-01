@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style-page.css">
    
 	<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
   <link rel="shortcut icon" href="favicon.png">
@@ -87,169 +88,67 @@
                     <li class="search"><input type="text" placeholder="Поиск"> <button></button></li>
                 </ul>
             </nav>
-			<?	$quotes = array(); // Инициализируем пустой массив
-  $quotes[] = "Пусть лучше я буду ярчайшим метеором, чем вечной, но сонной планетой..."; // Первая цитата
-  $quotes[] = "В старших классах самостоятельная работа перестает быть таковой. Она коллективная"; // Вторая цитата
-$quotes[] = "1 сентября. Школа, осень, чистый лист, звонок, уроки, оценки..."; // Вторая цитата
-
- 
-  $numberss = mt_rand(0, count($quotes) - 1); // Берём случайное число от 0 до (длины массива минус 1) включительно
-  $tanc = $quotes[$numberss]; // Выводим цитату
-  ?>
-            <div class="header-main">
-                <div class="titles">
-                    <div class="block-title title-item-small"><p>МКОУ Краснообская СОШ №2</p></div>
-                    <div class="block-title title-item-big"><p><?php echo $tanc; ?></p></div>
-                </div>
-                <div id="right-menu" class="menu">
-                    <ul>
-                          <!--  <div class="menu dropdown">  class="dropdown-link-left"
-                                <ul>
-                                    <li><a href="#">Доска объявлений проверяю на длинные названия</a></li>
-                                    <li><a href="#">Доска объявлений</a></li>
-                                    <li><a href="#">Доска объявлений</a></li>
-                                </ul>
-                            </div> -->
-                        </li>
-                        <li><a class="dropdown-link-left" href="#">Родителям и учащимся</a>
-                            <div class="menu dropdown"> 
-                                <ul>
-                                   
-                                    <li><a href="#">Расписание звонков</a></li>
-                                   <li><a href="#">Прием в школу</a></li>
-                                  <li><a href="#">Олимпиады</a></li>
-                                    <li><a href="#">Прием в 1-е и 9-е классы</a></li>
-                                
-							  </ul>
-                            </div> 
-                        </li>
-                        <li><a class="dropdown-link-left" href="#">ГИА</a>
-						 <div class="menu dropdown"> 
-                                <ul>
-                                   
-                                    <li><a href="#">ОГЭ - 9</a></li>
-                                   <li><a href="#">ГИА - 11</a></li>
-                                  <li><a href="#">Промежуточная аттестация</a></li>
-                                    <li><a href="#">Резерв</a></li>
-                                
-							  </ul>
-                            </div> 
-						</li>
-                        <li><a class="active" href="#">ОРКСЭ</a></li>
-                        <li><a href="#">Антикоррупционная политика в учреждении</a></li>
-                        <li><a href="#">Социально-психолого-педагогическое сопровождение</a></li>
-						   <li><a href="">Медицинская служба</a>
-                     
-                        <li><a class="" href="">Дошкольное образование</a>
-                           <!-- <div class="menu dropdown dropdown-up">   dropdown-link-left
-                                <ul>
-                                    <li><a href="#">Доска объявлений</a></li>
-                                    <li><a href="#">Доска объявлений</a></li>
-                                    <li><a href="#">Доска объявлений проверяю на длинные названия</a></li>
-                                </ul>
-                            </div> -->
-                        </li>
-                    </ul>
-                </div>
-            </div>
+	
+           
         </div>
     </header>
-    <section class="events">
-        <div class="container">
-            <div class="content">
-                <div class="events-title">
-                    <h2>Лента новостей</h2>
-                    <a href="#">Все новости</a>
-                </div>
-                <div class="events-list">
-                    <div class="row align-items-stretch">
-                        <div class="item col-lg-3 col-sm-6 col-12">
-                            <a href="#"><img src="img/news1.jpg" alt=""></a> 
-                            <div class="text">
-                                <a href="#"><p>родителей, талантливых, умных, увлеченных учеников, на мудрое и плодотворное добра и творчества</p></a>
-                                <span class = "publ-date">4 ноября 2019 г.</span>
-                                <div class="link"><a href="#">Подробнее</a></div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-3 col-sm-6 col-12">
-                            <a href="#"><img src="img/card-item-1.jpg" alt=""></a> 
-                            <div class="text">
-                                <a href="#"><p>родителей, талантливых, умных, увлеченных учеников, на мудрое и плодотворное добра и творчества</p></a>
-                                <span class = "publ-date">14 октября 2019 г.</span>
-                                <div class="link"><a href="#">Подробнее</a></div>
-                            </div>
-                        </div>
 
-                        <div class="item col-lg-3 col-sm-6 col-12 md-none">
-                            <a href="#"><img src="img/card-item-1.jpg" alt=""></a> 
-                            <div class="text">
-                                <a href="#"><p>родителей, талантливых, умных, увлеченных учеников, на мудрое и плодотворное добра и творчества</p></a>
-                                <span class = "publ-date">8 сентября 2019 г.</span>
-                                <div class="link"><a href="#">Подробнее</a></div>
-                            </div>
-                        </div>
+    <section class="content">
+        <div class="container" style='border:0px solid #1990C4; margin-top:21px;margin-bottom:31px;'>
+    <div class="content-block">
+	<div style='width:81%;border:1px solid #999;background-color:#fff'>
+         
 
-                        <div class="item col-lg-3 col-sm-6 col-12 md-none">
-                            <a href="#"><img src="img/card-item-1.jpg" alt=""></a> 
-                            <div class="text">
-                                <a href="#"><p>родителей, талантливых, умных, увлеченных учеников, на мудрое и плодотворное добра и творчества</p></a>
-                                <span class = "publ-date">1 сентября 2019 г.</span>
-                                <div class="link"><a href="#">Подробнее</a></div>
-                            </div>
+
+	
+	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	   
+		<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	   
+	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	   
+	   
+		   
+	</div>	  
+
+        <div class="side">
+            <div class="menu">
+                <ul>
+                        <!-- <div class="menu dropdown">
+                            <ul>
+                                <li><a href="#">Доска объявлений</a></li>
+                                <li><a href="#">Доска объявлений проверяю на длинные названия</a></li>
+                                <li><a href="#">Доска объявлений</a></li>
+                            </ul>
+                        </div>-->
+                    <li><a class="dropdown-link-left" href="#">Имплантация зубов</a>
+                        <div class="menu dropdown">
+                            <ul>
+                                <li><a href=""><img src="img/card-item-1.jpg" alt=""></a></li>
+                                <li><a href="">Документы</a></li>
+                                <li><a href="">Образование</a></li>
+                                <li><a href="">Образовательные стандарты</a></li>
+                                <li><a href="">Руководство. Педсостав</a></li>
+                                <li><a href="">Мат.-техн. обеспечение</a></li>
+                                <li><a href="">Материальная поддержка и стипендии</a></li>
+                                <li><a href="">Платные услуги</a></li>
+                                <li><a href="">Финансы и хозяйственная деятельность</a></li>
+                                <li><a href="">Вакантные места для приема (перевода)</a></li>
+                                <li><a href="">Сведения об интеграции </a></li>
+                                </ul>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    
+                    <li><a href="#">Протезирование зубов</a></li>
+                    <li><a class="" href="#">Профессиональная гигиена полости рта</a></li>
+                    <li><a class="" href="#">Удаление зубов</a></li>
+                    <li><a class="" href="#">Зубные виниры</a></li>
+                    <li><a class="" href="#">Осложнения после удаления зуба</a></li>
+                    <li><a class="" href="#">Брекет-системы</a></li>
+                    <li><a class="" href="#">Импланты Osstem</a></li>
+                    <li><a class="" href="#">Имплантация двухэтапная</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-    <section class="content">
-        <div class="container">
-            <h2>О нашей любимой школе</h2>
-            <div class="row">
-                <div class="content-descr col-md-6">
-                    <p>
-					Сегодня МКОУ Краснообская школа №2 это дружный коллектив учителей, обучающихся и их родителей (законных представителей). В учреждении работают талантливые, перспективные, творческие учителя. В коллективе успешно сочетаются мудрость возраста и энергия молодости. К новому учебному году коллектив пополнится новыми педагогическими кадрами.
-<br><br>Создавая условия для формирования конкурентоспособной, творчески мыслящей личности, умеющей находить нестандартные решения, коллектив приступил к реализации государственных образовательных стандартов второго поколения. Обучающиеся и их родители имеют возможность принимать участие в формировании основных образовательных программ Учреждения. Ежегодно идет увеличение гимназических классов, в учебных планах которых предусмотрено увеличение часов на изучение русского и иностранного языков, литературы, истории и обществознания. В рамках внеучебной деятельности планируется организация работы дискуссионного клуба «Дебаты», курса «Культура исследовательской деятельности».
-<br><br>Развивается направление углубленного изучения отдельных предметов в 10-х и 11-х классах. К чтению профильных и элективных курсов привлекаются специалисты высшей школы, расширяется спектр предлагаемых спецкурсов.
-<br><br>Открывая новую страницу истории школы, мы надеемся на понимающих, деятельных родителей, талантливых, умных, увлеченных учеников, на мудрое и плодотворное сотрудничество. Двери школы распахнуты для всех, кто рассчитывает на атмосферу добра и творчества.
-<br><br>Краснообск - уникальное место на карте Новосибирского района. Здесь среди живописной природы царит атмосфера культуры умственного труда и научного поиска, интеллигентности и доброжелательности. Жители рабочего поселка демонстрируют активную нравственную и социальную позицию, умение конструктивно решать возникающие проблемы. Неотъемлемой частью этого пространства являются образовательные учреждения Краснообска.			
-				   </p>
-                </div>
-                <div class="photo col-md-6"> <a href="#"><img src="img/photo-1.jpg" alt=""></a>
-                    <div class="photo-small">
-                        <div class="row">
-                            <div class="img-item"><img src="img/photo-800x401.jpg" alt=""></div>
-                            <div class="img-item"><img src="img/photo-800x400.jpg" alt=""></div>
-                        </div>
-                        <div class="row">
-                            <div class="img-item"><img src="img/photo-500x502.jpg" alt=""></div>
-                            <div class="img-item"><img src="img/photo-800x500.jpg" alt=""></div>
-                        </div>
-                     <!--   <div class="row">
-                            <div class="img-item"><img src="img/photo-800x504.jpg" alt=""></div>
-                            <div class="img-item"><img src="img/photo-500x501.jpg" alt=""></div>
-                        </div>
-                        <div class="row">
-                            <div class="img-item"><img src="img/photo-500x503.jpg" alt=""></div>
-                            <div class="img-item"><img src="img/photo-500x500.jpg" alt=""></div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="sponsors-line">
-                <div class="item">
-                    <img src="img/logo.PNG" alt="logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="item">
-                    <img src="img/logo.PNG" alt="logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="item">
-                    <img src="img/logo.PNG" alt="logo">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
+    </div>
+    	
         </div>
     </section>
     <footer>
