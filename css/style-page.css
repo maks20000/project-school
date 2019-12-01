@@ -12,11 +12,20 @@
 .content .side {
   margin-left: 7px;
   width: 19%;
-  background-color: #1990C4;
 }
 
 .content .side .menu {
   width: 100%;
+  background-color: #fff;
+}
+
+.content .side .menu li {
+  border: none;
+}
+
+.content .side .menu a {
+  color: #28AFE9;
+  padding: .1rem .5rem;
 }
 
 .content .side .menu .dropdown {
@@ -35,6 +44,10 @@
   background-color: #fff;
   border-top: 1px solid #fff;
   color: #000 !important;
+}
+
+.content .side .menu .active {
+  background-color: #fff;
 }
 
 .content .side .dropdown-link-left:before {
