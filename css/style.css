@@ -98,7 +98,7 @@ h2 {
 }
 
 .menu ul li a:hover {
-  background-color: transparent;
+  background-color: #0193DE;
   border-top: 1px solid #fff;
   color: #000 !important;
 }
