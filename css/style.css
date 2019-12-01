@@ -233,6 +233,7 @@ header nav ul .dropdown {
   top: 100%;
   min-width: 100%;
   background-color: #5EBEE7;
+  z-index: 1000;
 }
 
 header nav ul .dropdown ul {

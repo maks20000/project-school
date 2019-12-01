@@ -5,6 +5,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin-top: 21px;
   margin-bottom: 31px;
 }
@@ -12,6 +15,8 @@
 .content .side {
   margin-left: 7px;
   width: 19%;
+  border: 1px solid #999;
+  padding-bottom: 50px;
 }
 
 .content .side .menu {
@@ -21,11 +26,15 @@
 
 .content .side .menu li {
   border: none;
+  padding-left: 3.0rem;
+  padding-right: 1.0rem;
 }
 
 .content .side .menu a {
   color: #28AFE9;
-  padding: .1rem .5rem;
+  padding: 1rem .6rem 1rem;
+  border-bottom: 1px dashed #000;
+  display: inline-block;
 }
 
 .content .side .menu a:hover {
@@ -36,6 +45,7 @@
 
 .content .side .menu .dropdown {
   background: #fff;
+  z-index: 1000;
 }
 
 .content .side .menu .dropdown img {
@@ -43,7 +53,7 @@
 }
 
 .content .side .menu .dropdown a {
-  color: #000;
+  color: #28AFE9;
 }
 
 .content .side .menu .dropdown a:hover {
@@ -59,21 +69,22 @@
 .content .side .dropdown-link-left:before {
   display: inline-block;
   content: '';
-  background: url("../img/icons/arrow-down-white.png") no-repeat center center;
+  background: url("../img/icons/arrow.png") no-repeat center center;
   background-size: contain;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
   width: 10px;
   height: 10px;
-  margin-top: -5px;
   margin-left: -15px;
   margin-right: 5px;
   position: absolute;
-  top: 50%;
+  top: 22px;
 }
 
 .content .side .dropdown-link-left:hover:before {
   background: url("../img/icons/arrow-down-blck2.png") no-repeat center center;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
   background-size: contain;
 }
 /*# sourceMappingURL=style-page.css.map */
